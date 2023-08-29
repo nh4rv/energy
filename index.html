@@ -1,1 +1,23 @@
-[archiveorg energy-tape width=560 height=384 frameborder=0 webkitallowfullscreen=true mozallowfullscreen=true]
+<div style="width:40px; height:40px; position:absolute; bottom:0px; left:0px;">
+	<div id="winamp-container"></div>
+    <script>
+const Winamp = window.Webamp;
+// All configuration options are optional.
+const webamp = new Webamp({
+    // Optional.
+    initialTracks: [
+        {
+            metaData: {
+                artist: "Engery",
+                title: "Tape",
+            },
+            url: "https://files.catbox.moe/athmix.mp3",
+        },
+      ],
+    initialSkin: {
+        url: "URL TO SKIN .WSZ"
+    },
+});
+webamp.renderWhenReady(document.getElementById('winamp-container'));
+</script>
+</div>
